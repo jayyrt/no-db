@@ -1,16 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import axios from 'axios';
+import Favorites from './Favorites/Favorites';
+import Header from './Header/Header';
+import BucketList from './List/BucketList'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-         My Life Atlas
-        </p>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  constructor(){
+    super();
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <Header />
+        <Favorites />
+        <BucketList />
+      </div>
+    );
+  }
 }
-
-export default App;
