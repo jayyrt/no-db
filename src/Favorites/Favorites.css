@@ -1,10 +1,9 @@
 .Visits {
-    background-color: Green;
-    min-height: 90vh;
+    background-color: rgb(131, 219, 48);
+    min-height: 100vh;
+    width: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: gray;
+    font-size: 30px;
+    color: rgb(110, 107, 109);
+    padding: 20px;
     }

@@ -1,0 +1,15 @@
+.Adding-spot {
+    background-color: white;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Add {
+    border-radius: 5px;
+    border: 1px solid #2aabe2;
+    padding: 8px;
+    width: 70%;
+    outline: none;
+}
