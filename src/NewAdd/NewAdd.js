@@ -6,7 +6,7 @@ export default class NewAdd extends Component {
     contructor(){
 
         this.state= {
-            text: ''
+            text: '',
         }
         this.createPost = this.createPost.bind(this);
     }
@@ -22,8 +22,14 @@ export default class NewAdd extends Component {
     render() {
         return (
             <div className="Adding-spot">
-                <input className="Add"
-                       placeholder="Where would you like to go next?" />
+                <input className="Add-Country"
+                       placeholder="What is the country?" />
+                <input className="Add-State"
+                       placeholder="What is the state?" />
+                <input className="Add-City"
+                       placeholder="What is the city?" />
+                <input className="Picture"
+                       placeholder="add image link here" />  
                 <button onClick={ this.createPost }>Add to BucketList</button>
             </div>
         )

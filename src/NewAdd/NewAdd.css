@@ -2,14 +2,38 @@
     background-color: white;
     min-height: 5vh;
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.Add {
+.Add-Country {
     border-radius: 5px;
     border: 1px solid #2aabe2;
     padding: 8px;
-    width: 70%;
+    width: 30%;
+    outline: none;
+}
+
+.Add-State {
+    border-radius: 5px;
+    border: 1px solid #2aabe2;
+    padding: 8px;
+    width: 30%;
+    outline: none;
+}
+
+.Add-City {
+    border-radius: 5px;
+    border: 1px solid #2aabe2;
+    padding: 8px;
+    width: 30%;
+    outline: none;
+}
+
+.Picture {
+    border-radius: 5px;
+    border: 1px solid #2aabe2;
+    padding: 8px;
+    width: 30%;
     outline: none;
 }
