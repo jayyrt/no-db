@@ -38,7 +38,7 @@ export default class BucketList extends Component {
                     <p>Country: {newPlace.country}</p>
                     <p>State: {newPlace.state}</p>
                     <p>City: {newPlace.city}</p>
-                    <button className="Add-Photo" onClick={this.addPhoto}>Add Pic</button>
+                    <p>{newPlace.photo}</p>
                     <button className="Remove-Place" onClick={this.deletePlace}>Delete</button>
                     <button className="Visited" onClick={this.moveToFavorites}>ACCOMPLISHED</button>
                 </div>

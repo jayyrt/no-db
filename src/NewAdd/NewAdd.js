@@ -8,15 +8,12 @@ export default class NewAdd extends Component {
         this.state= {
             text: '',
         }
-        this.createPost = this.createPost.bind(this);
+        
+        this.addToList = this.addToList.bind(this);
     }
 
-    createPost() {
-        const { text } = this.state;
-        const { createPostFn } = this.props;
+    addToList() {
 
-        createPostFn( text );
-        this.setState({ text: '' });
     }
     
     render() {
@@ -29,8 +26,9 @@ export default class NewAdd extends Component {
                 <input className="Add-City"
                        placeholder="What is the city?" />
                 <input className="Picture"
-                       placeholder="add image link here" />  
-                <button onClick={ this.createPost }>Add to BucketList</button>
+                       placeholder="add image link here"
+                       img src="" />  
+                <button onClick={ this.addToList }>Add to BucketList</button>
             </div>
         )
     }
