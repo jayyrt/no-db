@@ -14,7 +14,7 @@ export default class Favorites extends Component {
         this.getPlaces = this.getPlaces.bind(this);
     }
 
-    getPlaces(){
+    getPlaces() {
     //   axios.get('')
     //  .then( res => {
     //   this.setState({ placesVisited: res.data }) 
