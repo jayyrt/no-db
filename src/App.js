@@ -6,9 +6,19 @@ import Header from './Header/Header';
 import BucketList from './List/BucketList';
 import NewAdd from './NewAdd/NewAdd';
 
-export default class App extends Component {
+class App extends Component {
   constructor(){
     super();
+
+    this.state = {
+      places: []
+    }
+  }
+
+  componentDidMount(){
+    axios.get('/api/places')
+    .then(({ data }) => this.setState({ places: data }))
+    .catch((err) => console.log(err))
   }
 
   render(){
@@ -17,10 +27,12 @@ export default class App extends Component {
         <Header />
         <NewAdd />
         <body className="Body">
-        <Favorites />
+        <Favorites places={this.state.places} />
         <BucketList />
         </body>
       </div>
     );
   }
 }
+
+export default App;
