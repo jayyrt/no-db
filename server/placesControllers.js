@@ -1,4 +1,4 @@
-const data = require('../places');
+const places = require('../places.json');
 let places = [...data.places];
 
 function addPlaces(req, res) {

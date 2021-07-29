@@ -7,7 +7,7 @@ class Favorites extends Component {
         super();
 
         this.state = {
-            places: []
+            places: [],
         }
 
     }
