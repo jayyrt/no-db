@@ -1,5 +1,4 @@
 const express = require("express");
-const places = require('../places.json')
 const {addPlaces, getPlaces, updatePlaces, deletePlaces} = require('./placesControllers');
 
 const app = express();

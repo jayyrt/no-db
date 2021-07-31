@@ -1,9 +1,9 @@
-const places = require('../places.json');
-let places = [...data.places];
+const data = require('./places');
+let places = [...data.places]
 
 function addPlaces(req, res) {
-    const { name } = req.body;
-    places.push({ name });
+    const { place } = req.body;
+    places.push({ place });
 
     res.status(200).send(places);
 }
@@ -21,7 +21,7 @@ function updatePlaces() {
         }
     })
     places = newPlaces;
-    res.status(200).send(places);
+   res.status(200).send(places);
 }
 
 function deletePlaces(req, res) {
@@ -37,5 +37,7 @@ module.exports = {
     addPlaces,
     getPlaces,
     updatePlaces,
-    deletePlaces,
+    deletePlaces
+
 }
+

@@ -1,20 +1,27 @@
 .Visits-title {
     background-color: rgb(131, 219, 48);
+    opacity: .8;
     min-height: 100vh;
     width: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     font-size: 30px;
     color: rgb(110, 107, 109);
-    padding: 20px;
+    padding: 5px;
     }
 
-.Get-Places {
-    height: 5vh;
-    width: 20vh;
+.fave-places {
+    display: inline;
+    justify-content: center;
+    height: 10vh;
+    width: 10vh;
+    border-style: border;
+    color: black;
+    font-size: 15px;
+    padding: 15vh;
 }
 
-.Faves-content {
-    display: flex;
-    justify-content: center;
+.delete-button {
+    height: 5vh;
+    width:10vh;
 }
