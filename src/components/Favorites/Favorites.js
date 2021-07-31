@@ -18,6 +18,12 @@ class Favorites extends Component {
         .catch((err) => console.log(err))
       }
 
+      handleDelete(){
+          axios.delete(`./api/places?deleteId=${id}`)
+          .then(({ data }) => this.setState({ places: data }))
+          .catch((err) => console.log(err))
+      }
+
     render(){
         return (
             <div>
@@ -27,7 +33,7 @@ class Favorites extends Component {
                     return (
                         <div>
                             {place.city}
-                            <button onClick={() => this.setState()}className="delete-button">Remove</button>
+                            <button onClick={() => this.setState({handleDelete} )} className="delete-button">Remove</button>
                             </div>
                     )
                 })}</div>
