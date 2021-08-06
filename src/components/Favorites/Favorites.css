@@ -11,8 +11,8 @@
     }
 
 .fave-places {
-    display: inline;
-    justify-content: center;
+    display: center;
+    justify-content: space-around;
     height: 10vh;
     width: 10vh;
     border-style: border;
