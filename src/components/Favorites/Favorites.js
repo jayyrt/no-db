@@ -18,8 +18,9 @@ class Favorites extends Component {
         .catch((err) => console.log(err))
       }
 
-      handleDelete(){
-          axios.delete(`./api/places?deleteId=${id}`)
+      handleDelete(id){
+        axios
+           .delete(`./api/places?deleteId=${id}`)
           .then(({ data }) => this.setState({ places: data }))
           .catch((err) => console.log(err))
      }
