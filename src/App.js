@@ -1,8 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
-import Favorites from './components/Favorites/Favorites';
+import axios from 'axios';
 import Header from './components/Header/Header';
-import BucketList from './components/List/BucketList';
 import NewAdd from './components/NewAdd/NewAdd';
 
 class App extends Component {
@@ -14,15 +13,20 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+     axios
+     .get('/api/places')
+     .then(({ data }) => this.setState({ places: data }))
+     .catch((err) => console.log(err))
+  }
+
+  
+
 
   render(){
     return (
       <div className="App">
         <Header />
-        <body className="Body">
-        <Favorites />
-        <BucketList />
-        </body>
         <NewAdd />
       </div>
     );
