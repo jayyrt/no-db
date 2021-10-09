@@ -15,3 +15,18 @@
   background-size: cover;
   justify-content: center;
 }
+
+.place-container {
+  height: 50vh;
+  width: 50vh;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 30vw;
+}
+.place {
+  height: 30vh;
+  width: 30vh;
+  border: 1px solid black;
+  margin: 10px;
+}
