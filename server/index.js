@@ -1,11 +1,13 @@
 const express = require("express");
-const { getPlaces, } = require("./controllers/placesControllers.js");
+const pc = require("./controllers/placesControllers.js");
 
 const app = express();
 app.use(express.json());
 
-app.get('/api/places', getPlaces);
+app.get('/api/places', pc.view);
+app.post('/api/places', pc.create);
+app.put('/api/places/:id', pc.update);
 
-const PORT = 4000;
+const PORT = 3000;
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
