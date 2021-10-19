@@ -7,6 +7,7 @@ app.use(express.json());
 app.get('/api/places', pc.view);
 app.post('/api/places', pc.create);
 app.put('/api/places/:id', pc.update);
+app.delete('/api/places/:id', pc.delete);
 
 const PORT = 3000;
 
