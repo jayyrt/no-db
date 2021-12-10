@@ -1,5 +1,5 @@
 module.exports = {
-    placesVisited: [
+    places: [
         {
             id: 1,
             location: 'Mazatlan, Sinaloa',
@@ -17,9 +17,7 @@ module.exports = {
             location: 'Chicago, Illinois',
             status: 'Visited',
             url_pic: '',
-        }
-    ],
-    toVisit: [
+        },
         {
             id: 4,
             location: 'Tamarindo, Costa Rica',

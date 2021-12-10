@@ -1,8 +1,6 @@
 const express = require("express");
-const cors = require("cors");
-const pc = require("./controllers/placesControllers.js");
+const pc = require("./controllers/placesControllers");
 
-app.use(cors());
 const app = express();
 app.use(express.json());
 

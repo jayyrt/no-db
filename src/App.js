@@ -1,11 +1,12 @@
 import './App.css';
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
+import Display from './components/Display/Display';
 import NewAdd from './components/NewAdd/NewAdd';
 
 export default class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
   }
   
   render(){
@@ -13,9 +14,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="place-container">
-        <p className="place"></p>
-        </div>
+        <Display />
         <NewAdd />
       </div>
     );

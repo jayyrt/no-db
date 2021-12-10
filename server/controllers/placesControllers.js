@@ -1,5 +1,5 @@
-const places = require('./placesData');
-let id = 0;
+const data = require('./placesData');
+let places = [...data.places];
 
 module.exports = {
     view: (req, res) => {
@@ -10,8 +10,8 @@ module.exports = {
         let place = {
             id: id,
             location: location,
-            year: year,
-            img: img
+            status: status,
+            url_pic: url_pic,
         }
         places.push(place);
         id++;
