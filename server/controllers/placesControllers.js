@@ -1,4 +1,4 @@
-let places = [];
+const places = require('./placesData');
 let id = 0;
 
 module.exports = {
@@ -6,11 +6,10 @@ module.exports = {
         res.status(200).send(places);
     },
     create: (req, res) => {
-        const { state, country, year, img } = req.body;
+        const { location, status, url_pic } = req.body;
         let place = {
             id: id,
-            state: state,
-            country: country,
+            location: location,
             year: year,
             img: img
         }
