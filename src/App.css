@@ -6,7 +6,31 @@
   }
 }
 
-.Body {
+.place-container {
+  height: 100vh;
+  width: auto;
+  border: 3px solid black;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bucketlist {
+  height: 80vh;
+  width: 200vh;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.place {
+  height: 80vh;
+  width: 200vh;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+/* .Body {
   display: flex;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/BIG_LEAF_MAPLES_HOH.jpg");
   background-attachment: fixed;
@@ -14,6 +38,6 @@
   background-position: center;
   background-size: cover;
   justify-content: center;
-}
+} */
 
 

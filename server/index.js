@@ -9,6 +9,6 @@ app.post('/api/places', pc.create);
 app.put('/api/places/:id', pc.update);
 app.delete('/api/places/:id', pc.delete);
 
-const PORT = 3050;
+const PORT = 4000;
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
